@@ -6,7 +6,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@ComponentScan
+@ComponentScan("com.river.springBoot")
 @EnableAutoConfiguration
 public class App {
     public static void main( String[] args ) throws Exception {

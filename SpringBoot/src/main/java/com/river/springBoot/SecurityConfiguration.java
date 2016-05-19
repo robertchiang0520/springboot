@@ -18,10 +18,8 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
         	.authorizeRequests()
         		.antMatchers("/").permitAll().anyRequest().authenticated()
         		.and()
-
         	.formLogin()
-            	.loginPage("/login")
-            	.permitAll()
+            	.loginPage("/login").permitAll()
             	.and()
             .logout()
                 .permitAll()
